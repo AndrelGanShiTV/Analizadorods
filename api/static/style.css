@@ -1,0 +1,178 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f9f5; /* Verde claro */
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #2e7d32; /* Verde oscuro */
+    padding: 1% 1%;
+}
+
+nav ul {
+    list-style-type: none;
+
+    
+    text-align: center;
+}
+
+nav ul li {
+    
+    display: inline;
+    padding: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #c8e6c9; /* Verde claro más claro */
+}
+
+.content {
+    padding: 20px;
+}
+
+.flash {
+    background-color: #81c784; /* Verde claro más oscuro */
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.frame {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.center {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+form {
+    margin-bottom: 20px;
+    text-align: center; /* Centra los elementos del formulario */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #4caf50; /* Texto verde */
+}
+
+/* Estilo para el input de tipo file */
+form input[type="file"] {
+    display: inline-block; /* Para centrar */
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #4caf50; /* Borde verde */
+    background-color: #fff;
+    color: #4caf50; /* Texto verde */
+    border-radius: 5px;
+}
+
+/* Estilo para el botón de submit */
+form input[type="submit"] {
+    background-color: #4caf50; /* Color de botón verde */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #4caf50; /* Color de botón verde */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #4caf50; /* Borde verde */
+    background-color: #fff;
+    color: #4caf50; /* Texto verde */
+    border-radius: 5px;
+}
+
+/* Estilo para el texto que indica el archivo seleccionado */
+input[type="file"]::file-selector-button {
+    padding: 10px;
+    background-color: #4caf50; /* Botón verde */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para el texto que indica el archivo seleccionado */
+input[type="file"]::file-selector-button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el ratón */
+}
+
+.lista-ods {
+    list-style-type: none; /* Quita el decorador de punto */
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no hay suficiente espacio */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+.resultado {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #dcedc8; /* Verde claro */
+    border-radius: 5px;
+    margin-right: 10px; /* Espacio entre los elementos */
+    text-align: center; /* Centra el texto dentro de los elementos <li> */
+    flex: 0 0 calc(33.33% - 20px); /* Ancho máximo del 33.33% con margen de 10px a cada lado */
+}
+
+/* Estilo para el ODS */
+.resultado h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #388e3c; /* Verde oscuro */
+    text-align: center; /* Centra el texto dentro de los elementos <li> */
+}
+
+/* Estilo para el porcentaje */
+.resultado p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #689f38; /* Verde medio */
+    text-align: center; /* Centra el texto dentro de los elementos <li> */
+}
+
+.results li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #dcedc8; /* Verde claro */
+    border-radius: 5px;
+    text-align: center; /* Centra el texto dentro de los elementos <li> */
+}
+
+.logo {
+    background-color: rgba(255,255,255,0.8); 
+    width: 10%;
+    margin: 0;
+    padding: 0;
+}

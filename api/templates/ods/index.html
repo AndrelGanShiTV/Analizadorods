@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block header %}
+<h1>{% block title %}Analizador ODS{% endblock %}</h1>
+{% endblock %} {% block content %}
+<h2>Que es Analizador ODS</h2>
+<p>
+  El funcionamiento del software Analizador ODS se basa en la evaluación y
+  clasificación de documentos en función de su alineación con los Objetivos de
+  Desarrollo Sostenible (ODS).
+</p>
+<a class="button" href="{{ url_for('ods.analyze') }}">Analizar Archivo</a>
+{% endblock %}

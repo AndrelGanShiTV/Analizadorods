@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<title>{% block title %}{% endblock %} - Flask</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<nav>
+    <ul>
+        <li><a href="">Recargar!</a></li>
+        <li><a href="{{ url_for('ods.index') }}">Inicio</a></li>
+        <li><a href="{{ url_for('ods.analyze') }}">Analizar</a></li>
+        <li><a href="https://www.tdea.edu.co" target="_blank"><img src="{{ url_for('static', filename='logotdea.png')}}" alt="Tecnologico de Antioquia" class="logo"></a></li>
+    </ul>
+</nav>
+<section class="content">
+    <header class="center">
+        {% block header %}{% endblock %}
+    </header>
+    {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+    {% endfor %}
+    
+    <div class="frame">
+        <div class="center">
+            {% block content %} 
+            {% endblock %}
+        </div>
+    </div>
+</section>

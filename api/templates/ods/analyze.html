@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block header %}
+<h1>{% block title %}Analizador ODS{% endblock %}</h1>
+{% endblock %} {% block content %}
+<form method="post" enctype="multipart/form-data">
+  <label for="Archivo">SELECCIONAR ARCHIVO</label>
+  <input
+    type="file"
+    name="archive_path"
+    id="archive_path"
+    accept=".pdf,.doc,.docx"
+    required
+  />
+  <input type="submit" value="Analyze" />
+</form>
+<div class="resultado">
+  <h3>Nombre del Archivo</h3>
+  <p>{{ archive_name }}</p>
+</div>
+<ul class="lista-ods" style="list-style-type: none">
+  {% for ods, percentage in results.items() %}
+  <li class="resultado">
+    <h3>{{ ods }}:</h3>
+    <p>{{ percentage | round(2) }}%</p>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
